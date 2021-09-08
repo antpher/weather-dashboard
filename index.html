@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Weather Dashboard</title>
 </head>
 <body>
@@ -14,5 +15,20 @@
         </h1> 
     </header>
 
+    <div class="container-fluid">
+        <div class="search col-lg-3 bg-secondary">
+            <h2>Search for a City:</h2>
+            <div class="searchBar">
+                <input id="inputCity" type="text" class="form" placeholder="Enter a city">
+                <div class="submitBtn">
+                    <button class="btn" type="button" id="serach-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
