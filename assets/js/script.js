@@ -6,6 +6,7 @@ var temp = document.querySelector('.temp')
 var wind = document.querySelector('.wind')
 var humidity = document.querySelector('.humidity')
 var uv = document.querySelector('.uv')
+var pic = document.querySelector('pic')
 
 function getWeather(event) {
     event.preventDefault();
@@ -18,6 +19,7 @@ function getWeather(event) {
     var tempValue = farenheit(data.main.temp) + 'F';
     var windValue = data.wind.speed + 'MPH';
     var humidityValue = data.main.humidity + '%';
+    var weatherPic = data.weather[0].icon
     
     cityName.innerHTML= name;
     temp.innerHTML = tempValue;
