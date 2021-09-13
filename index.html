@@ -19,37 +19,35 @@
 
     <div class="container-fluid">
         <div class="row">
-        <div class="search col-lg-3 bg-secondary">
+        <div class="search col-sm-4 bg-secondary">
             <h2>Search for a City:</h2>
             <div class="searchBar">
                 <form class="submitBtn">
-                    <input id="inputCity" type="text" class="form" placeholder="Enter a city">
-                    <button class="btn" type="button" id="serach-button">
-                        <i class="fas fa-search"></i>
-                    </button>
+                    <input type="text" class="inputValue" placeholder="Enter a city">
+                    <input type="submit" value="Submit" class="btn"></input>
                 </form>
-                <form id="history"></form>
+                <form id="history">
+                    <ul class="list-group"></ul>
+                </form>
             </div>
         </div>
-        
-        <div class="col-lg-9">
-                <div class="col-lg-10" id="currentWeather">
-                    <div class="weatherStats">
-                        <h2 id="city"></h2> <img id="weatherImage" alt="">
-                        <p id="temperature"></p>
-                        <p id="windSpeed"></p>
-                        <p id="humidity"></p>
-                        <p id="uvIndex"></p>
-                    </div>
-                </div>
 
-                <div class="row" id="fiveDayForecast">
-                    <div class="row">
-                        <h2>5-Day Forecast</h2>
-                    </div>
+        <div class="col-sm-8">
+            <div class="row border border-dark">
+                <div class="col-sm-12" class="currentWeather">
+                    <h3 class="cityName"></h3>
+                    <p>Temperature: <span class="temp"></span></p>
+                    <p>Wind Speed: <span class="wind"></span></p>
+                    <p>Humidity: <span class="humidity"></span></p>
+                    <p>UV Index: <span class="uv"></span></p>
                 </div>
+            </div>
+            <div class="col-sm-12">
+            <div class="row" id="fiveDayForecast">
+            </div>
+            </div>
         </div>
-    </div>
+        </div>
     </div>
 
 <script src="./assets/js/script.js"></script>
